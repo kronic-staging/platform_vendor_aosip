@@ -34,6 +34,14 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/bin/sysinit:system/bin/sysinit
+
+# AOSiP-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/etc/init.aosip.rc:root/init.aosip.rc
+
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
