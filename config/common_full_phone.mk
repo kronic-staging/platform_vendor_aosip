@@ -22,5 +22,11 @@ PRODUCT_PACKAGES += \
 
 # SuperSU FTW
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/common/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/nexus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+    vendor/aosip/prebuilt/common/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aosip/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/aosip/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
