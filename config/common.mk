@@ -51,6 +51,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
+# T-Mobile theme engine
+include vendor/androidx/config/themes_common.mk
+
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
