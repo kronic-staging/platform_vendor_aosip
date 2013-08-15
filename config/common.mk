@@ -114,6 +114,3 @@ endif
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
-
-# Set valid modversion
-PRODUCT_PROPERTY_OVERRIDES += ro.modversion=$(BUILD_NUMBER)
