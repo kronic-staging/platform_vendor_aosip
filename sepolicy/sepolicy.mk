@@ -9,4 +9,5 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_SEPOLICY_UNION += \
     file_contexts \
     mac_permissions.xml \
+    seapp_contexts \
     sysinit.te \
