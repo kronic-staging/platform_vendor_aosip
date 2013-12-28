@@ -13,8 +13,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
+    ro.config.ringtone=RobotsforEveryone.ogg \
+    ro.config.notification_sound=Ariel.ogg \
+    ro.config.alarm_alert=Krypton.ogg \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    persist.sys.root_access=3
 
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
@@ -139,3 +143,8 @@ PRODUCT_PROPERTY_OVERRIDES += ro.modversion=$(BUILD_NUMBER)
 
 # T-Mobile Theme Engine
 $(call inherit-product, vendor/androidx/config/themes_common.mk)
+
+# Motox dalvik patch
+ifneq ($(filter androidx_mako,$(TARGET_PRODUCT)),)
+$(call inherit-product, vendor/androidx/products/motoxdalvikpatch.mk)
+endif
