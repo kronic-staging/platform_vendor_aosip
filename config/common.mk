@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/etc/init.androidx.rc:root/init.androidx.rc
 
+# Copy latinime for gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
 # Don't copy memory tweaks on low ram devices (<786M)
 ifeq ($(strip $(TARGET_IS_LOW_RAM)),)
 PRODUCT_COPY_FILES += \
