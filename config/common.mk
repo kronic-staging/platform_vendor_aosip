@@ -101,6 +101,7 @@ PRODUCT_PACKAGES += \
 
 # Optional androidx packages
 PRODUCT_PACKAGES += \
+    AndroidxSettings \
     audio_effects.conf \
     Basic \
     busybox \
