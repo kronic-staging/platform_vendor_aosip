@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
     busybox \
     DashClock \
     libscreenrecorder \
+    OmniSwitch \
     ScreenRecorder \
     SoundRecorder \
     Torch \
