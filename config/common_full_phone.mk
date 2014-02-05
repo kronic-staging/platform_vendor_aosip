@@ -18,6 +18,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0
+
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
