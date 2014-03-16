@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES += \
 
 # ES-File Explorer
 PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/app/ESFileExplorer_127.apk:system/app/ESFileExplorer_127.apk
+    vendor/androidx/prebuilt/common/app/ESFileExplorer_131.apk:system/app/ESFileExplorer_131.apk
 
 # Don't copy memory tweaks on low ram devices (<786M)
 ifeq ($(strip $(TARGET_IS_LOW_RAM)),)
@@ -150,9 +150,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
 
 # Set valid modversion
 PRODUCT_PROPERTY_OVERRIDES += ro.modversion=$(BUILD_NUMBER)
-
-# T-Mobile Theme Engine
-$(call inherit-product, vendor/androidx/config/themes_common.mk)
 
 # Motox dalvik patch
 ifneq ($(filter androidx_mako,$(TARGET_PRODUCT)),)
