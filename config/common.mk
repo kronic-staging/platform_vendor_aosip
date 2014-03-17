@@ -106,9 +106,7 @@ PRODUCT_PACKAGES += \
     Basic \
     busybox \
     DashClock \
-    libscreenrecorder \
     OmniSwitch \
-    ScreenRecorder \
     SoundRecorder \
     Torch \
     VoiceDialer
