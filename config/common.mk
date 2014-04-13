@@ -46,10 +46,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
-# ES-File Explorer
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/app/ESFileExplorer_131.apk:system/app/ESFileExplorer_131.apk
-
 # Don't copy memory tweaks on low ram devices (<786M)
 ifeq ($(strip $(TARGET_IS_LOW_RAM)),)
 PRODUCT_COPY_FILES += \
@@ -105,6 +101,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
     busybox \
+    CMFileManager \
     DashClock \
     libscreenrecorder \
     OmniSwitch \
