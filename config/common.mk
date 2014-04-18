@@ -102,7 +102,6 @@ PRODUCT_PACKAGES += \
     Basic \
     busybox \
     CMFileManager \
-    DashClock \
     libscreenrecorder \
     OmniSwitch \
     ScreenRecorder \
