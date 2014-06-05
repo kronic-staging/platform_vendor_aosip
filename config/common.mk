@@ -100,10 +100,7 @@ PRODUCT_PACKAGES += \
     AndroidxSettings \
     audio_effects.conf \
     Basic \
-    busybox \
-    CMFileManager \
     libscreenrecorder \
-    OmniSwitch \
     ScreenRecorder \
     SoundRecorder \
     Torch \
@@ -146,8 +143,3 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
 
 # Set valid modversion
 PRODUCT_PROPERTY_OVERRIDES += ro.modversion=$(BUILD_NUMBER)
-
-# Motox dalvik patch
-ifneq ($(filter androidx_mako,$(TARGET_PRODUCT)),)
-$(call inherit-product, vendor/androidx/products/motoxdalvikpatch.mk)
-endif
