@@ -13,8 +13,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
-    ro.config.ringtone=RobotsforEveryone.ogg \
-    ro.config.notification_sound=Ariel.ogg \
+    ro.config.ringtone=Orion.ogg \
+    ro.config.notification_sound=tweeters.ogg \
     ro.config.alarm_alert=Krypton.ogg \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
@@ -100,11 +100,9 @@ PRODUCT_PACKAGES += \
 
 # Optional androidx packages
 PRODUCT_PACKAGES += \
-    AndroidxSettings \
     audio_effects.conf \
     Basic \
-    libscreenrecorder \
-    ScreenRecorder \
+    DarkX \
     SoundRecorder \
     Torch \
     VoiceDialer
