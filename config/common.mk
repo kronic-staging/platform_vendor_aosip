@@ -102,6 +102,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji
 
+# Chromium Prebuilt
+ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
+-include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
+endif
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
 
