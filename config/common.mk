@@ -99,9 +99,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
-    DarkX \
     SoundRecorder \
-    Torch \
     VoiceDialer
 
 # Extra tools in androidx
