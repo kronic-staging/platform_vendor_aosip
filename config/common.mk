@@ -85,9 +85,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
-# Theme engine
-include vendor/androidx/config/themes_common.mk
-
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
