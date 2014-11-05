@@ -2,10 +2,6 @@ PRODUCT_BRAND ?= androidx
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-#Define thirdparty for Koush's SU
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.androidx.superuser
-
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -17,8 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=tweeters.ogg \
     ro.config.alarm_alert=Krypton.ogg \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false \
-    persist.sys.root_access=3
+    ro.com.android.dataroaming=false
 
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
@@ -91,9 +86,7 @@ PRODUCT_PACKAGES += \
     Development \
     Email \
     LatinIME \
-    Launcher3 \
-    Superuser \
-    su
+    Launcher3
 
 # Optional androidx packages
 PRODUCT_PACKAGES += \
