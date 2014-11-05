@@ -93,10 +93,8 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     Email \
-    libscreenrecorder \
     LatinIME \
     Launcher3 \
-    ScreenRecorder \
     Superuser \
     su
 
