@@ -35,3 +35,9 @@ on property:service.adb.tcp.port=-1
 service sysinit /system/bin/sysinit
     user root
     oneshot
+    disabled
+
+# SuperSU fix
+service flash_recovery /system/etc/install-recovery.sh
+    class main
+    oneshot
