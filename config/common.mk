@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Proprietary latinime lib needed for swyping
+PRODUCT_COPY_FILES += \
+    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
