@@ -18,12 +18,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
-# Backup Tool
-PRODUCT_COPY_FILES += \
-	vendor/androidx/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-	vendor/androidx/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-	vendor/androidx/prebuilt/common/bin/50-hosts.sh:system/addon.d/50-hosts.sh
-
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
@@ -37,35 +31,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/etc/init.androidx.rc:root/init.androidx.rc
 
-# Copy latinime for gesture typing
-#PRODUCT_COPY_FILES += \
-#    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
-
-# Don't copy memory tweaks on low ram devices (<786M)
-ifeq ($(strip $(TARGET_IS_LOW_RAM)),)
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/etc/init.memory.rc:root/init.memory.rc
-endif
-
-# Compcache/Zram support
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/androidx/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
-
 # mounts
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/bin/sysrw:system/bin/sysrw \
     vendor/androidx/prebuilt/common/bin/sysro:system/bin/sysro \
     vendor/androidx/prebuilt/common/bin/rootrw:system/bin/rootrw \
     vendor/androidx/prebuilt/common/bin/rootro:system/bin/rootro
-
-# swap support
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/bin/handle_swap:system/bin/handle_swap
-
-# Nam configuration script
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -75,10 +46,6 @@ PRODUCT_COPY_FILES +=  \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# Don't export PS1 in /system/etc/mkshrc.
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
 # Required androidx packages
 PRODUCT_PACKAGES += \
@@ -91,9 +58,7 @@ PRODUCT_PACKAGES += \
 # Optional androidx packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
-    Basic \
-    SoundRecorder \
-    VoiceDialer
+    Basic
 
 # Extra tools in androidx
 PRODUCT_PACKAGES += \
