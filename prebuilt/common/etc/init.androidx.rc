@@ -1,17 +1,4 @@
 # androidx Extras
-import /init.superuser.rc
-
-on init
-    export TERMINFO /system/etc/terminfo
-    export TERM linux
-
-    # Disabled virtual memory randomization
-    # (if randomization is enabled the AEM-JIT will have a lower cache hit rate)
-    write /proc/sys/kernel/randomize_va_space 0
-
-on post-fs-data
-# include additional memory tweaks
-    import /init.memory.rc
 
 on boot
     # Run sysinit
@@ -43,19 +30,6 @@ on property:service.adb.tcp.port=5555
 on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
-
-# Compcache - handle at boot
-service compcache /system/bin/handle_compcache
-    class main
-    user root
-    group root
-    oneshot
-
-service handleswap /system/bin/handle_swap
-    class main
-    user root
-    group root
-    oneshot
 
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit

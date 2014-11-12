@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Camera \
     Development \
-    Email \
     LatinIME \
     Launcher3
 
