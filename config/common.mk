@@ -36,6 +36,11 @@ PRODUCT_COPY_FILES += \
     vendor/androidx/config/permissions/com.layers.theme.xml:system/etc/permissions/com.layers.theme.xml \
     vendor/androidx/prebuilt/common/etc/Layers.apk:system/app/Layers/Layers.apk
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/androidx/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/androidx/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
