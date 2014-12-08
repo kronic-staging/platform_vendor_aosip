@@ -10,4 +10,5 @@ BOARD_SEPOLICY_UNION += \
     file_contexts \
     mac_permissions.xml \
     seapp_contexts \
+    service_contexts \
     sysinit.te \
