@@ -20,8 +20,8 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/androidx/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/androidx/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/androidx/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/androidx/prebuilt/common/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
     vendor/androidx/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
