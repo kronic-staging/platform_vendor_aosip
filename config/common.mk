@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
 # Optional androidx packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
-    Basic
+    Basic \
+    Terminal
 
 # Screen recorder
 PRODUCT_PACKAGES += \
