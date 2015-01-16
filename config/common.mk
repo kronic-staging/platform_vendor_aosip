@@ -38,13 +38,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/etc/init.androidx.rc:root/init.androidx.rc
 
-# mounts
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/bin/sysrw:system/bin/sysrw \
-    vendor/androidx/prebuilt/common/bin/sysro:system/bin/sysro \
-    vendor/androidx/prebuilt/common/bin/rootrw:system/bin/rootrw \
-    vendor/androidx/prebuilt/common/bin/rootro:system/bin/rootro
-
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
