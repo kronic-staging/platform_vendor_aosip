@@ -31,6 +31,11 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
+# Layers Theme
+PRODUCT_COPY_FILES += \
+    vendor/androidx/config/permissions/com.layers.theme.xml:system/etc/permissions/com.layers.theme.xml \
+    vendor/androidx/prebuilt/common/etc/Layers.apk:system/app/Layers/Layers.apk
+
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
