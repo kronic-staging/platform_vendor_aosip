@@ -33,8 +33,7 @@ PRODUCT_COPY_FILES += \
 
 # Layers Theme
 PRODUCT_COPY_FILES += \
-    vendor/androidx/config/permissions/com.layers.theme.xml:system/etc/permissions/com.layers.theme.xml \
-    vendor/androidx/prebuilt/common/etc/Layers.apk:system/app/Layers/Layers.apk
+    vendor/androidx/config/permissions/com.layers.theme.xml:system/etc/permissions/com.layers.theme.xml
 
 # SuperSU
 PRODUCT_COPY_FILES += \
