@@ -9,9 +9,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
-    ro.config.ringtone=Orion.ogg \
-    ro.config.notification_sound=tweeters.ogg \
-    ro.config.alarm_alert=Krypton.ogg \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
@@ -31,10 +28,6 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
-# Layers Theme
-PRODUCT_COPY_FILES += \
-    vendor/androidx/config/permissions/com.layers.theme.xml:system/etc/permissions/com.layers.theme.xml
-
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/androidx/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
@@ -44,8 +37,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Camera \
     Development \
-    LatinIME \
-    Launcher3
+    LatinIME
 
 # Optional androidx packages
 PRODUCT_PACKAGES += \
