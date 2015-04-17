@@ -7,4 +7,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Required androidx packages
 PRODUCT_PACKAGES += \
-    Launcher2
+    Launcher2 \
+    LegacyCamera
