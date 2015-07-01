@@ -15,10 +15,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
-# androidx-specific init file
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/etc/init.androidx.rc:root/init.androidx.rc
-
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
