@@ -6,4 +6,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Required androidx packages
 PRODUCT_PACKAGES += \
+    CellBroadcastReceiver \
     Launcher3
