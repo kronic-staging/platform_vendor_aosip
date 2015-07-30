@@ -40,6 +40,11 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic
 
+# Screen recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 # emoji
 PRODUCT_PACKAGES += \
     libemoji
