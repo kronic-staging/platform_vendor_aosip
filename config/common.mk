@@ -39,12 +39,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
-    Terminal
+#    Terminal
 
 # Screen recorder
-PRODUCT_PACKAGES += \
-    ScreenRecorder \
-    libscreenrecorder
+#PRODUCT_PACKAGES += \
+#    ScreenRecorder \
+#    libscreenrecorder
 
 # emoji
 PRODUCT_PACKAGES += \
