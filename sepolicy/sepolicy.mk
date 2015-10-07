@@ -5,6 +5,3 @@
 
 BOARD_SEPOLICY_DIRS += \
     vendor/androidx/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    mac_permissions.xml
