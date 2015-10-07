@@ -21,8 +21,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Proprietary latinime lib needed for swyping
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+#PRODUCT_COPY_FILES += \
+#    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # SuperSU
 PRODUCT_COPY_FILES += \
@@ -50,10 +50,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji
 
-# Chromium Prebuilt
-ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
--include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
-endif
-
-PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/dictionaries
+#PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
