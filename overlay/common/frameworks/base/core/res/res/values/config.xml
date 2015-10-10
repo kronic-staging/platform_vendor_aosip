@@ -24,13 +24,13 @@
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- <string-array translatable="false" name="config_globalActionsList">
+    <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
         <item>reboot</item>
         <item>airplane</item>
         <item>silent</item>
         <item>users</item>
-    </string-array> -->
+    </string-array>
 
     <!-- Disable stock OTA components if installed
     <string-array name="config_disabledComponents" translatable="false">
