@@ -15,3 +15,12 @@ PRODUCT_COPY_FILES += \
 #Root by default
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
+
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
+
+# SuperSU FTW
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/common/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/nexus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
