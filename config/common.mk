@@ -15,6 +15,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# Disable ADB authentication
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
