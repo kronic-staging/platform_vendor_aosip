@@ -99,7 +99,8 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     OmniJaws \
     LockClock \
-    masquerade
+    masquerade \
+    Chromium
 
 # emoji
 PRODUCT_PACKAGES += \
