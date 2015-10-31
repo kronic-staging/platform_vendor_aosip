@@ -27,11 +27,6 @@ PRODUCT_COPY_FILES +=  \
 #PRODUCT_COPY_FILES += \
 #    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
-# SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/androidx/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/androidx/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
