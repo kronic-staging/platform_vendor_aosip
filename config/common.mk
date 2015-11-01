@@ -27,6 +27,11 @@ PRODUCT_COPY_FILES +=  \
 #PRODUCT_COPY_FILES += \
 #    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
+# Superuser
+PRODUCT_COPY_FILES +=  \
+    vendor/androidx/prebuilt/common/su:root/sbin/su \
+    vendor/androidx/prebuilt/common/app/Superuser.apk:system/app/Superuser/Superuser.apk
+
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
