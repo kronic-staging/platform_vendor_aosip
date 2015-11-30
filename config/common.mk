@@ -28,6 +28,13 @@ PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/su:root/sbin/su \
     vendor/androidx/prebuilt/common/app/Superuser.apk:system/app/Superuser/Superuser.apk
 
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
 # Required androidx packages
 PRODUCT_PACKAGES += \
     Camera \
