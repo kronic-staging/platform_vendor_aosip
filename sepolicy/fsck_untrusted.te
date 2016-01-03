@@ -4,3 +4,4 @@ allow fsck_untrusted fuse_device:chr_file getattr;
 allow fsck_untrusted self:capability sys_admin;
 allow fsck_untrusted system_block_device:blk_file getattr;
 allow fsck_untrusted userdata_block_device:blk_file getattr;
+allow fsck_untrusted block_device:blk_file getattr;
