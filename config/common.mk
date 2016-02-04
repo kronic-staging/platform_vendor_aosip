@@ -23,10 +23,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/androidx/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
-# Proprietary latinime lib needed for swyping
-#PRODUCT_COPY_FILES += \
-#    vendor/androidx/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
-
 # Superuser
 PRODUCT_COPY_FILES +=  \
     vendor/androidx/prebuilt/common/su:root/sbin/su \
@@ -41,17 +37,10 @@ PRODUCT_PACKAGES += \
 # Optional androidx packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
-    Basic \
-#    Terminal
-
-# Screen recorder
-#PRODUCT_PACKAGES += \
-#    ScreenRecorder \
-#    libscreenrecorder
+    Basic
 
 # emoji
 PRODUCT_PACKAGES += \
     libemoji
 
-#PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common

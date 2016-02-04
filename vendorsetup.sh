@@ -14,6 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo androidx_grouper-userdebug
-add_lunch_combo androidx_mako-userdebug
 add_lunch_combo androidx_shamu-userdebug
