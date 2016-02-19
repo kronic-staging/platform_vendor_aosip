@@ -23,4 +23,4 @@
 LOCAL_PATH := $(call my-dir)
 
 # Include UBER common configuration
-include vendor/orion/config/uber.mk
+include vendor/aosip/config/uber.mk
