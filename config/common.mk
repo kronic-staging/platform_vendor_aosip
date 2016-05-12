@@ -81,3 +81,6 @@ PRODUCT_PACKAGES += \
     libemoji
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosip/overlay/common
+
+# Inherit common product build prop overrides
+-include vendor/aosip/products/common_versions.mk
