@@ -1,4 +1,7 @@
-PRODUCT_BRAND ?= androidx
+# Generic product
+PRODUCT_NAME := AOSIP
+PRODUCT_BRAND := AOSIP
+PRODUCT_DEVICE := generic
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -16,17 +19,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
 # Disable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=1 \
+    persist.service.adb.enable=1 \
+    persist.sys.usb.config=mtp,adb
 
-# Bring in camera effects
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+# Camera Effects
 PRODUCT_COPY_FILES +=  \
-    vendor/androidx/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/androidx/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/aosip/proprietary/common/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/aosip/proprietary/common/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif
 
-# Superuser
-PRODUCT_COPY_FILES +=  \
-    vendor/androidx/prebuilt/common/su:root/sbin/su \
-    vendor/androidx/prebuilt/common/app/Superuser.apk:system/app/Superuser/Superuser.apk
+PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
 
 # DU Utils Library
 PRODUCT_PACKAGES += \
@@ -35,13 +41,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
-# Required androidx packages
+# Required aosip packages
 PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME
 
-# Optional androidx packages
+# Optional aosip packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic
@@ -50,4 +56,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/androidx/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosip/overlay/common

@@ -1,2 +1,3 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/androidx_shamu.mk
+    $(LOCAL_DIR)/aosip_angler.mk \
+    $(LOCAL_DIR)/aosip_shamu.mk
