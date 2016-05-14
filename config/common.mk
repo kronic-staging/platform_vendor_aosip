@@ -43,8 +43,17 @@ endif
 ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
 # Camera Effects
 PRODUCT_COPY_FILES +=  \
-    vendor/aosip/proprietary/common/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/aosip/proprietary/common/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+    vendor/aosip/prebuilt/common/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/aosip/prebuilt/common/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif
+
+# Proprietary latinime libs needed for Keyboard swyping
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/system/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
 PRODUCT_COPY_FILES += \
@@ -68,13 +77,15 @@ PRODUCT_BOOT_JARS += \
 # Required aosip packages
 PRODUCT_PACKAGES += \
     Camera \
-    Development \
     LatinIME
 
 # Optional aosip packages
 PRODUCT_PACKAGES += \
     audio_effects.conf \
-    Basic
+    Basic \
+    OmniJaws \
+    OmniStyle \
+    OmniSwitch
 
 # emoji
 PRODUCT_PACKAGES += \
