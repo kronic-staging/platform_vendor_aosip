@@ -45,7 +45,7 @@ endif
 ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
 # Camera Effects
 PRODUCT_COPY_FILES +=  \
-    vendor/aosip/prebuilt/common/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/aosip/prebuilt/common/media/LMprec_508.emd:system/vendor/media/LMprec_508.emd \
     vendor/aosip/prebuilt/common/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 endif
 
