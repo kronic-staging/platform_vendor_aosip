@@ -3,8 +3,6 @@ PRODUCT_NAME := AOSIP
 PRODUCT_BRAND := AOSIP
 PRODUCT_DEVICE := generic
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -17,6 +15,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+
+# Enable SIP+VoIP on all targets
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -56,6 +58,11 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/system/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+PRODUCT_PACKAGES += \
+    libdrmclearkeyplugin 
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
 
@@ -83,9 +90,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
-    OmniJaws \
-    OmniStyle \
-    OmniSwitch
+    OmniSwitch \
+    LockClock
 
 # emoji
 PRODUCT_PACKAGES += \

@@ -4,10 +4,12 @@ $(call inherit-product, vendor/aosip/config/common.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Krypton.ogg
 
-# Required androidx packages
+ifneq ($(filter aosip_angler aosip_bullhead aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+# Build SimToolKit
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    Stk
+    Stk \
+    CellBroadcastReceiver
+endif
 
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bootanimations/BOOTANIMATION.zip:system/media/bootanimation.zip
@@ -26,7 +28,9 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Backup Tool
+ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/bin/50-aosip.sh:system/addon.d/50-aosip.sh \
     vendor/aosip/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aosip/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aosip/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/aosip/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+endif
