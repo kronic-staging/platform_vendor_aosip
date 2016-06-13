@@ -2,7 +2,7 @@
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aosip/products/common.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Setup device specific product configuration.
 
