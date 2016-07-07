@@ -91,6 +91,8 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
     OmniSwitch \
+    OmniStyle \
+    OmniJaws \
     LockClock
 
 # emoji
