@@ -15,5 +15,8 @@
 #
 
 add_lunch_combo aosip_angler-userdebug
-add_lunch_combo aosip_shamu-userdebug
 add_lunch_combo aosip_bullhead-userdebug
+add_lunch_combo aosip_hammerhead-userdebug
+add_lunch_combo aosip_mako-userdebug
+add_lunch_combo aosip_shamu-userdebug
+
