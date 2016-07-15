@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     OmniStyle \
     OmniJaws \
-    LockClock
+    LockClock \
+    masquerade
 
 # emoji
 PRODUCT_PACKAGES += \
