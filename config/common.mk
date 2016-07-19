@@ -65,6 +65,7 @@ endif
 
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
+    vendor/aosip/prebuilt/common/app/kamod.apk:system/priv-app/kamod.apk
 
 # init.d script support
 PRODUCT_COPY_FILES += \
