@@ -30,7 +30,7 @@ PRODUCT_COPY_FILES += \
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/bin/50-aosip.sh:system/addon.d/50-aosip.sh \
-    vendor/aosip/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aosip/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+    vendor/aosip/prebuilt/common/bin/50-backupscript.sh:system/addon.d/50-backupscript.sh \
+    vendor/aosip/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/aosip/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
 endif
