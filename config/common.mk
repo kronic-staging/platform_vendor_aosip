@@ -82,13 +82,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/init.aosip.rc:root/init.aosip.rc
 
-# DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
-
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
-
 # Required aosip packages
 PRODUCT_PACKAGES += \
     Camera \
@@ -98,13 +91,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
-    OmniSwitch \
-    OmniStyle \
-    OmniJaws \
-    LockClock \
-    masquerade \
-    KernelAdiutor \
-    Chromium
 
 # emoji
 PRODUCT_PACKAGES += \

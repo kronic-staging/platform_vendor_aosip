@@ -28,9 +28,9 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Backup Tool
-ifneq ($(WITH_GMS),true)
-PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/bin/50-backupscript.sh:system/addon.d/50-backupscript.sh \
-    vendor/aosip/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/aosip/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
-endif
+#ifneq ($(WITH_GMS),true)
+#PRODUCT_COPY_FILES += \
+#    vendor/aosip/prebuilt/common/bin/50-backupscript.sh:system/addon.d/50-backupscript.sh \
+#    vendor/aosip/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+#    vendor/aosip/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
+#endif
