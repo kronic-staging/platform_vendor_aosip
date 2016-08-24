@@ -100,3 +100,5 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosip/overlay/common
 
 # Inherit common product build prop overrides
 -include vendor/aosip/config/common_versions.mk
+-include vendor/aosip/sepolicy/sepolicy.mk
+
