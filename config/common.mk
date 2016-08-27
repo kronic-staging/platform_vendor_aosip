@@ -75,6 +75,13 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
 
+# DU Utils Library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# Packages
+include vendor/aosip/config/packages.mk
+
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/OmniSwitch.apk:system/priv-app/OmniSwitch.apk
 
