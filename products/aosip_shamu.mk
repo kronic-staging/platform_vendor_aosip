@@ -10,8 +10,6 @@ $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/moto/shamu/overlay-cm
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosip_shamu
 PRODUCT_DEVICE := shamu
@@ -20,9 +18,8 @@ PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
     BUILD_FINGERPRINT=google/shamu/shamu:6.0.1/MOB30W/3031100:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 6.0.1 MOB30W 3031100 release-keys" \
-    BUILD_ID=MOB30W \
-    BUILD_DISPLAY_ID=MOB30W
+    PRIVATE_BUILD_DESC="shamu-user 6.0.1 MOB30W 3031100 release-keys"
