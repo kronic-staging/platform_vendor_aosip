@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
+    masquerade
 
 # emoji
 PRODUCT_PACKAGES += \
