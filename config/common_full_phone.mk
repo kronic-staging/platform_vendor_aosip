@@ -4,7 +4,7 @@ $(call inherit-product, vendor/aosip/config/common.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Krypton.ogg
 
-ifneq ($(filter aosip_angler aosip_bullhead aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_angler aosip_bullhead aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk \

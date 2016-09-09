@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     mkfs.exfat
 endif
 
-ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
 # Camera Effects
 PRODUCT_COPY_FILES +=  \
     vendor/aosip/prebuilt/common/media/LMprec_508.emd:system/vendor/media/LMprec_508.emd \
@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES +=  \
 endif
 
 # Proprietary latinime libs needed for Keyboard swyping
-ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
@@ -66,13 +66,15 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/system/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
-ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu aosip_sprout4 aosip_sprout8,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     libdrmclearkeyplugin 
 endif
 
 PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk \
+    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
+
+PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/OmniSwitch.apk
 
 # init.d script support
