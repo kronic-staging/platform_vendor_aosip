@@ -15,6 +15,6 @@ PRODUCT_MANUFACTURER := LGE
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:7.0/NRD90M/3085278:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 7.0 NRD90M 3085278 release-keys" \
+    BUILD_FINGERPRINT=google/bullhead/bullhead:7.0/NRD90S/3142244:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 7.0 NRD90S 3142244 release-keys" \
     BUILD_ID=NRD90M
