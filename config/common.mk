@@ -76,7 +76,7 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
 
 PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/OmniSwitch.apk
+    vendor/aosip/prebuilt/common/app/OmniSwitch.apk:system/priv-app/OmniSwitch.apk
 
 # init.d script support
 PRODUCT_COPY_FILES += \
@@ -95,8 +95,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
-    masquerade \
-    OmniSwitch
+    masquerade
 
 # emoji
 PRODUCT_PACKAGES += \
