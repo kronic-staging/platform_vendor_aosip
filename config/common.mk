@@ -53,9 +53,11 @@ endif
 
 ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
 # Camera Effects
+# Bring in camera effects
 PRODUCT_COPY_FILES +=  \
-    vendor/aosip/prebuilt/common/media/LMprec_508.emd:system/vendor/media/LMprec_508.emd \
+    vendor/aosip/prebuilt/common/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/aosip/prebuilt/common/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+
 endif
 
 # Proprietary latinime libs needed for Keyboard swyping
