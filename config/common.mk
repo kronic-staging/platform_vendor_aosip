@@ -72,18 +72,12 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin 
 endif
 
-PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
-
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
 # Packages
 include vendor/aosip/config/packages.mk
-
-PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/app/OmniSwitch.apk:system/priv-app/OmniSwitch.apk
 
 # init.d script support
 PRODUCT_COPY_FILES += \
@@ -92,22 +86,6 @@ PRODUCT_COPY_FILES += \
 # AOSiP-specific init file
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/init.aosip.rc:root/init.aosip.rc
-
-# Required aosip packages
-PRODUCT_PACKAGES += \
-    Camera \
-    LatinIME
-
-# Optional aosip packages
-PRODUCT_PACKAGES += \
-    audio_effects.conf \
-    Basic \
-    masquerade \
-    Eleven
-
-# emoji
-PRODUCT_PACKAGES += \
-    libemoji
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosip/overlay/common
 

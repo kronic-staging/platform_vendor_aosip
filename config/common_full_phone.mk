@@ -22,10 +22,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0
 
-# Busybox
-PRODUCT_PACKAGES += \
-    Busybox
-
 # SuperSU FTW
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
