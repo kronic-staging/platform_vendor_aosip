@@ -5,16 +5,17 @@ PRODUCT_PACKAGES += \
 
 # Required aosip packages
 PRODUCT_PACKAGES += \
-    Gallery2 \
-    LatinIME \
     audio_effects.conf \
     Basic \
-    masquerade \
+    Busybox \
     Eleven \
+    Gallery2 \
+    LatinIME \
     libemoji \
-    Busybox
+    masquerade \
+    MusicFX \
+    OmniSwitch
 
 PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk \
-    vendor/aosip/prebuilt/common/app/OmniSwitch.apk:system/priv-app/OmniSwitch.apk
+    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
 
