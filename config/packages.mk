@@ -12,6 +12,7 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     LatinIME \
     libemoji \
+    LockClock \
     masquerade \
     MusicFX \
     OmniSwitch
