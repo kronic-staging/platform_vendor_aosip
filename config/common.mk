@@ -35,6 +35,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=mtp,adb
 
+# World APN list
+PRODUCT_COPY_FILES += \
+    vendor/aosip/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # NTFS support
 PRODUCT_PACKAGES += \
     mkfs.ntfs \
@@ -61,7 +65,7 @@ PRODUCT_COPY_FILES +=  \
 endif
 
 # Proprietary latinime libs needed for Keyboard swyping
-ifneq ($(filter aosip_flo aosip_hammerhead aosip_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter arm64,$(TARGET_ARCH)),)
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 else
