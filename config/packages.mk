@@ -15,7 +15,8 @@ PRODUCT_PACKAGES += \
     masquerade \
     MusicFX \
     OmniSwitch \
-    toybox
+    toybox \
+    messaging
 
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
