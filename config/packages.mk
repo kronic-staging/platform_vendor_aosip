@@ -7,7 +7,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     Basic \
-    Busybox \
     Eleven \
     Gallery2 \
     LatinIME \
@@ -15,7 +14,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     masquerade \
     MusicFX \
-    OmniSwitch
+    OmniSwitch \
+    toybox
 
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
