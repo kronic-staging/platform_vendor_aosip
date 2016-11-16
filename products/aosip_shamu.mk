@@ -21,5 +21,5 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:7.0.0/NBD90Z/3264873:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 7.0.0 NBD90Z 3264873 release-keys"
+    BUILD_FINGERPRINT=google/shamu/shamu:7.0.0/NBD91P/3397968:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 7.0.0 NBD91P 3397968 release-keys"
