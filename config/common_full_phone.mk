@@ -34,3 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/aosip/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
 endif
+
+# Include explicitly to work around Facelock issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
