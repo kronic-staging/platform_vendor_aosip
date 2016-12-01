@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     libemoji \
     libsepol \
     librsjni \
+    libprotobuf-cpp-full \
     e2fsck \
     mke2fs \
     tune2fs \
