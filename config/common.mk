@@ -13,6 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+    ro.setupwizard.rotation_locked=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
