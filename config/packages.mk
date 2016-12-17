@@ -16,7 +16,8 @@ PRODUCT_PACKAGES += \
     MusicFX \
     OmniSwitch \
     toybox \
-    messaging
+    messaging \
+    WallpaperPicker
 
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
