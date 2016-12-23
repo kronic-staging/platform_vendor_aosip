@@ -35,5 +35,9 @@
         <item>airplane</item>
         <item>silent</item>
     </string-array>
+  
+      <!-- Flag indicating whether the assist disclosure can be disabled using
+         ASSIST_DISCLOSURE_ENABLED. -->
+    <bool name="config_allowDisablingAssistDisclosure">true</bool>
 
 </resources>
