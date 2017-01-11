@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit some common aosip stuff.
+# Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/aosip/common.mk)
 
 PRODUCT_NAME := aosip_bacon
