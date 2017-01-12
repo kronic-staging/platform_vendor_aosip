@@ -28,9 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bin/50-backupscript.sh:system/addon.d/50-backupscript.sh \
     vendor/aosip/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/aosip/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/aosip/prebuilt/common/bin/blacklist:system/addon.d/blacklist \
-    vendor/aosip/prebuilt/common/bin/whitelist:system/addon.d/whitelist
+    vendor/aosip/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
 
 # Bootanimation
 PRODUCT_COPY_FILES += \

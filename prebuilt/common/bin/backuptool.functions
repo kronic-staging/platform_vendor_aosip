@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=6.0
+
 
 backup_file() {
   if [ -e "$1" ]; then
@@ -35,3 +35,4 @@ restore_file() {
     fi
   fi
 }
+
