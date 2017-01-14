@@ -15,9 +15,13 @@ PRODUCT_COPY_FILES += \
 
 # AOSiP packages
 PRODUCT_PACKAGES += \
+    Calculator \
+    Calendar \
     CalendarWidget \
     LatinIME \
+    LiveWallpaperPicker \
     LockClock \
+    OmniStyle \
     OmniSwitch \
     WallpaperPicker
 
