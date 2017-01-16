@@ -5,9 +5,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
-PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
-
 # SuperSU FTW
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
@@ -71,9 +68,7 @@ PRODUCT_PACKAGES += \
 # Snapdragon packages
 PRODUCT_PACKAGES += \
     MusicFX \
-    SnapdragonCamera \
-    SnapdragonGallery \
-    SnapdragonMusic
+    Camera2
 
 # OMS
 PRODUCT_PACKAGES += \
