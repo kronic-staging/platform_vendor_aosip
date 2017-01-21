@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
     Calendar \
     CalendarWidget \
     LatinIME \
-    LiveWallpaperPicker \
+    LiveWallpapersPicker \
     LockClock \
     OmniStyle \
     OmniSwitch \
