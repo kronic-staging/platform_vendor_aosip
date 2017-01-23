@@ -76,10 +76,10 @@ endif
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
-# Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
+#ifneq ($(TARGET_BUILD_VARIANT),eng)
+## Enable ADB authentication
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+#endif
 
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
