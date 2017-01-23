@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
 # AOSiP packages
 PRODUCT_PACKAGES += \
     Calculator \
+    CalendarWidget \
     LatinIME \
     LiveWallpapersPicker \
     LockClock \
