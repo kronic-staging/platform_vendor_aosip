@@ -12,6 +12,10 @@ PRODUCT_DEVICE := bullhead
 PRODUCT_MODEL := Nexus 5X
 PRODUCT_MANUFACTURER := LGE
 
+# Device Maintainer
+
+PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Kuba Schenk (Abuk)"
+
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
