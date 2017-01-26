@@ -82,13 +82,13 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 #endif
 
 # Custom off-mode charger
-ifneq ($(WITH_CM_CHARGER),false)
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    cm_charger_res_images \
-    font_log.png \
-    libhealthd.cm
-endif
+#ifneq ($(WITH_CM_CHARGER),false)
+#PRODUCT_PACKAGES += \
+#    charger_res_images \
+#    cm_charger_res_images \
+#    font_log.png \
+#    libhealthd.cm
+#endif
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/aosip/packages.mk)
