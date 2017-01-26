@@ -35,7 +35,7 @@ TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Sri Harsha (srisurya95)"
+PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Sri Harsha (srisurya95), Akhil"
 
 # Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
