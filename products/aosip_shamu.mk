@@ -4,11 +4,13 @@
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
+PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Josh Fox"
+
 # Inherit some common aosip stuff.
 $(call inherit-product, vendor/aosip/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
+$(call inherit-product, device/motorola/shamu/aosp_shamu.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosip_shamu
