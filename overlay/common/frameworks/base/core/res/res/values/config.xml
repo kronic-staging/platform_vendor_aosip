@@ -63,4 +63,7 @@
     <!-- Enable Night display, which requires HWC 2.0. -->
     <bool name="config_nightDisplayAvailable">true</bool>
 
+    <!-- Set this to true to enable the platform's auto-power-save mode like doze -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
 </resources>
