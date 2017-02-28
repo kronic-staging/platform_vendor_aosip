@@ -10,7 +10,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Michael S Corigliano (Mike C
 $(call inherit-product, vendor/aosip/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/motorola/shamu/aosp_shamu.mk)
+$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosip_shamu
