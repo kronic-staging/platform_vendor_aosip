@@ -48,10 +48,12 @@ PRODUCT_PACKAGES += \
     messaging \
     CellBroadcastReceiver \
     Stk \
-    telephony-ext
+    telephony-ext \
+    rcscommon
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    telephony-ext \
+    rcscommon
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -59,7 +61,9 @@ PRODUCT_PACKAGES += \
     rcs_service_aidl.xml \
     rcs_service_aidl_static \
     rcs_service_api \
-    rcs_service_api.xml
+    rcs_service_api.xml \
+    rcsservice \
+    rcscommon.xml
 
 # Snapdragon packages
 PRODUCT_PACKAGES += \
