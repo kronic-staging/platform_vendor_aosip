@@ -9,9 +9,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     Calculator \
     CalendarWidget \
+    Gallery2 \
     LatinIME \
     LiveWallpapersPicker \
     LockClock \
+    OmniJaws \
     OmniStyle \
     OmniSwitch \
     WallpaperPicker
@@ -52,8 +54,7 @@ PRODUCT_PACKAGES += \
     rcscommon
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
-    rcscommon
+    telephony-ext
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -67,8 +68,7 @@ PRODUCT_PACKAGES += \
 
 # Snapdragon packages
 PRODUCT_PACKAGES += \
-    MusicFX \
-    Camera2
+    MusicFX
 
 # OMS
 PRODUCT_PACKAGES += \
