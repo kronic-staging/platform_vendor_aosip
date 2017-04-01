@@ -36,7 +36,7 @@ fi
 
 if [[ "$2" =~ "sync" ]];
 then
-time repo sync -j16 -q -c --force-sync --force-broken
+time repo sync -c -f -j16 --force-sync --no-clone-bundle --no-tags
 fi
 
 export CCACHE_DIR=${HOME}/.ccache-$device
