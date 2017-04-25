@@ -25,4 +25,5 @@ PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := lux
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto X Play"
+    PRODUCT_NAME="Moto X Play" \
+    DEVICE_MAINTAINERS="Nick van Bokhorst (GtrCraft)"
