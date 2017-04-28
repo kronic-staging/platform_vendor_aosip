@@ -12,7 +12,6 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     LatinIME \
     LiveWallpapersPicker \
-    LockClock \
     OmniJaws \
     OmniStyle \
     OmniSwitch \
